@@ -1,4 +1,4 @@
-# babel-plugin-add-import-extension [![builds.sr.ht status](https://builds.sr.ht/~kprieb/babel-plugin-add-import-extension.svg)](https://builds.sr.ht/~kprieb/babel-plugin-add-import-extension?)
+# babel-plugin-add-import-extension
 
 A plugin to add extensions to import and export declarations, is very useful when you use Typescript with Babel and don't want to explicity import or export module with extensions.
 
