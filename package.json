@@ -2,7 +2,7 @@
   "name": "babel-plugin-add-import-extension",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/plugin.js",
   "scripts": {
     "test": "jest tests",
     "lint": "standard",
