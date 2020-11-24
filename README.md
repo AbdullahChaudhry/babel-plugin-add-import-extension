@@ -6,9 +6,9 @@ A plugin to add extensions to import and export declarations, is very useful whe
 
 ```sh
 # using npm
-npm install --save-dev babel-plugin-add-import-extension
+npm install --save-dev https://github.com/AbdullahChaudhry/babel-plugin-add-import-extension.git
 # usin yarn
-yarn add -D babel-plugin-add-import-extension
+  yarn add -D https://github.com/AbdullahChaudhry/babel-plugin-add-import-extension.git
 ```
 
 Add to your `plugins` on your babel config file:
@@ -17,7 +17,7 @@ Add to your `plugins` on your babel config file:
 plugins: ["babel-plugin-add-import-extension"]; // defaults to .js extension
 ```
 
-Is possible to set the extension when you set the plugin:
+It is possible to set the extension when you set the plugin:
 
 ```js
 plugins: [
@@ -82,6 +82,31 @@ will be converted to:
 ```js
 export { add, double } from "./lib/numbers.js";
 ```
+
+This will also replace extensions that contain a period like so
+
+```js
+import { moduleA, moduleB } from "./lib/something.model.ts";
+```
+
+will be converted to:
+
+```js
+import { moduleA, moduleB } from "./lib/something.model.js";
+```
+
+and
+
+```js
+export { moduleA, moduleB } from "./lib/something.model.ts";
+```
+
+will be converted to:
+
+```js
+export { moduleA, moduleB } from "./lib/something.model.js";
+```
+
 
 What this plugin does is to check all imported modules and if your module is not on `node_module` it will consider that is a project/local module and add the choosed extension, so for node modules it don't add any extension.
 
