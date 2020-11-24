@@ -8,7 +8,7 @@ A plugin to add extensions to import and export declarations, is very useful whe
 # using npm
 npm install --save-dev https://github.com/AbdullahChaudhry/babel-plugin-add-import-extension.git
 # usin yarn
-  yarn add -D https://github.com/AbdullahChaudhry/babel-plugin-add-import-extension.git
+yarn add -D https://github.com/AbdullahChaudhry/babel-plugin-add-import-extension.git
 ```
 
 Add to your `plugins` on your babel config file:
