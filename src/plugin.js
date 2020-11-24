@@ -38,7 +38,6 @@ const makeDeclaration =
       const dirPath = resolve(dirname(filename), module)
 
       const hasModuleExt = extname(module).length
-      // const newModuleName = hasModuleExt ? module.slice(0, -extname(module).length) : module
       const newModuleName = module;
 
       const pathLiteral =
